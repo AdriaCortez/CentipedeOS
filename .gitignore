@@ -1,0 +1,76 @@
+# Build - Reproduzíveis no projeto, são grandes e podem ser gerados novamente. Não devem ser versionados
+build/
+dist/
+output/
+out/
+artifacts/
+*.iso
+*.img
+*.raw
+*.qcow
+*.qcow2
+*.vmdk
+*.ova
+*.rpm
+*.srpm
+
+# Pacotes, repositórios e arquivos temporários de build - Arquivos temporários ou resultados do processo de compilação
+rpmbuild/
+RPMS/
+SRPMS/
+BUILD/
+BUILDROOT/
+repos/
+repo/
+*.repo
+
+# Logs e arquivos temporários - Podem conter metadados e pacotes duplicados
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+
+# Máquinas virtuais e snapshots - Podem ser desnecessariamente grandes e conter dados locais
+.qemu/
+.libvirt/
+*.vdi
+*.vhd
+*.vhdx
+*.fd
+*.snapshot
+
+# Arquivos sensíveis e de configuração - Autoexpliativo
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.gpg
+*.asc
+!*.pub
+!*.pub.asc
+secrets/
+credentials/
+
+#  Cache genérico e arquivos de build - Autoexplicativo
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+*.egg-info/
+.tox/
+.venv/
+venv/
+node_modules/
+
+# IDE e editores - Configurações específicas de IDEs e editores de texto, não há necessidade de versionar
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db
